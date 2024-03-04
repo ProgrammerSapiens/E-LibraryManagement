@@ -1,4 +1,8 @@
-﻿.footerlinks {
+﻿body {
+    margin-bottom: 100px;
+}
+
+.footerlinks {
     color: #ffffff;
     text-decoration: none !important;
 }
@@ -8,7 +12,7 @@
     }
 
 #footer1 {
-    background: #762b00;
+    background: #9a3800;
 }
 
 #footer2 {
