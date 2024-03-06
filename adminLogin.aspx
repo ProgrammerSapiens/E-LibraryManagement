@@ -3,7 +3,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="container" style="margin-top: 120px;">
         <div class="row">
             <div class="col-md-4 mx-auto">
@@ -37,12 +36,14 @@
 
                         <div class="row">
                             <div class="col">
+                                <label>Email</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Email" />
+                                    <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Email" TextMode="Email" />
                                 </div>
 
+                                <label>Password</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" TextMode="Password" placeholder="Password" />
+                                    <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password" />
                                 </div>
 
                                 <div class="form-group">
