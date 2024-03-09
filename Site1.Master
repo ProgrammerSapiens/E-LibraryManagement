@@ -13,12 +13,10 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <!-- Pagestyle -->
     <link href="css/customStyleSheet.css" rel="stylesheet" />
-    <!-- datatabkes css -->
+    <!-- datatables css -->
     <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
     <!-- fontawesome css -->
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-
-
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
