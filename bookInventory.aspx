@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="bookInventory.aspx.cs" Inherits="E_LibraryManagement.bookInventory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid" style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
@@ -22,7 +27,7 @@
                             <div class="row">
                                 <div class="col">
                                     <center>
-                                        <img src="Source/imgs/books1.png" width="100px" />
+                                        <img src="Source/imgs/books1.png" width="60px" />
                                     </center>
                                 </div>
                             </div>
@@ -39,7 +44,6 @@
                                 <div class="col">
                                     <center>
                                         <asp:FileUpload class="form-control" ID="FileUpload1" runat="server" />
-                                        <br />
                                     </center>
                                 </div>
                             </div>

@@ -45,7 +45,7 @@
                                     <label>Member ID</label>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Book ID" />
+                                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Member ID" />
                                             <asp:Button class="btn btn-secondary" ID="Button4" runat="server" Text="Go" />
                                         </div>
                                     </div>

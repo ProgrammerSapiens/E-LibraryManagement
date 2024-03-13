@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\membermanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:membermanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\bookissuing.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:bookissuing.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\bookinventorylist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:bookinventorylist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\css\\customstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:css\\customstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\site1.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:site1.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +30,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "memberManagement.aspx",
-              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\memberManagement.aspx",
-              "RelativeDocumentMoniker": "memberManagement.aspx",
-              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\memberManagement.aspx",
-              "RelativeToolTip": "memberManagement.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-11T07:15:04.341Z",
+              "DocumentIndex": 3,
+              "Title": "customStyleSheet.css",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\css\\customStyleSheet.css",
+              "RelativeDocumentMoniker": "css\\customStyleSheet.css",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\css\\customStyleSheet.css",
+              "RelativeToolTip": "css\\customStyleSheet.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-03-12T11:24:28.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "bookIssuing.aspx",
-              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\bookIssuing.aspx",
-              "RelativeDocumentMoniker": "bookIssuing.aspx",
-              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\bookIssuing.aspx",
-              "RelativeToolTip": "bookIssuing.aspx",
+              "DocumentIndex": 0,
+              "Title": "homepage.aspx",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\homepage.aspx",
+              "RelativeDocumentMoniker": "homepage.aspx",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\homepage.aspx",
+              "RelativeToolTip": "homepage.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-09T07:13:23.132Z",
+              "WhenOpened": "2024-03-12T11:21:01.482Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "bookInventoryList.aspx",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\bookInventoryList.aspx",
+              "RelativeDocumentMoniker": "bookInventoryList.aspx",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\bookInventoryList.aspx",
+              "RelativeToolTip": "bookInventoryList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-12T11:08:44.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Site1.Master.cs",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master.cs",
+              "RelativeDocumentMoniker": "Site1.Master.cs",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master.cs",
+              "RelativeToolTip": "Site1.Master.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T09:12:16.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site1.Master",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master",
+              "RelativeDocumentMoniker": "Site1.Master",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master",
+              "RelativeToolTip": "Site1.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-12T07:13:44.838Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }

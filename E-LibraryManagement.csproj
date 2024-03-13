@@ -66,6 +66,7 @@
   <ItemGroup>
     <Content Include="adminLogin.aspx" />
     <Content Include="authorManagement.aspx" />
+    <Content Include="bookInventory.aspx" />
     <Content Include="bookIssuing.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -2193,7 +2194,7 @@
     <Content Include="Source\imgs\writer.png" />
     <Content Include="userLogin.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="bookInventoryList.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="adminLogin.aspx.cs">
@@ -2209,6 +2210,13 @@
     </Compile>
     <Compile Include="authorManagement.aspx.designer.cs">
       <DependentUpon>authorManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookInventory.aspx.cs">
+      <DependentUpon>bookInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookInventory.aspx.designer.cs">
+      <DependentUpon>bookInventory.aspx</DependentUpon>
     </Compile>
     <Compile Include="bookIssuing.aspx.cs">
       <DependentUpon>bookIssuing.aspx</DependentUpon>
@@ -2267,12 +2275,12 @@
     <Compile Include="userLogin.aspx.designer.cs">
       <DependentUpon>userLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="bookInventoryList.aspx.cs">
+      <DependentUpon>bookInventoryList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="bookInventoryList.aspx.designer.cs">
+      <DependentUpon>bookInventoryList.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
