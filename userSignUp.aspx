@@ -182,7 +182,7 @@
                                 <div class="col">
 
                                     <div class="form-group">
-                                        <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Sign Up" Style="width: 100%" />
+                                        <asp:Button class="btn btn-success btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" Style="width: 100%" OnClick="btnSignUp_Click" />
                                     </div>
 
                                 </div>

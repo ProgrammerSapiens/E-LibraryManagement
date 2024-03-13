@@ -105,12 +105,12 @@ namespace E_LibraryManagement
         protected global::System.Web.UI.WebControls.TextBox TextBox9;
 
         /// <summary>
-        /// Button1 элемент управления.
+        /// btnSignUp элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
     }
 }

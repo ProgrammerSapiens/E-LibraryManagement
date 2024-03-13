@@ -33,40 +33,40 @@ namespace E_LibraryManagement
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LinkButton1 элемент управления.
+        /// lkbtnViewBooks элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnViewBooks;
 
         /// <summary>
-        /// LinkButton2 элемент управления.
+        /// lkbtnUserLogin элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton2;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnUserLogin;
 
         /// <summary>
-        /// LinkButton3 элемент управления.
+        /// lkbtnSignUp элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton3;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnSignUp;
 
         /// <summary>
-        /// LinkButton4 элемент управления.
+        /// lkbtnLogout элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton4;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnLogout;
 
         /// <summary>
         /// LinkButton5 элемент управления.
@@ -87,57 +87,57 @@ namespace E_LibraryManagement
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
 
         /// <summary>
-        /// btnAdminLogin элемент управления.
+        /// lkbtnAdminLogin элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnAdminLogin;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnAdminLogin;
 
         /// <summary>
-        /// btnAuthorManagement элемент управления.
+        /// lkbtnAuthorManagement элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnAuthorManagement;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnAuthorManagement;
 
         /// <summary>
-        /// btnPublisherManagement элемент управления.
+        /// lkbtnPublisherManagement элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnPublisherManagement;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnPublisherManagement;
 
         /// <summary>
-        /// btnBookInventory элемент управления.
+        /// lkbtnBookInventory элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnBookInventory;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnBookInventory;
 
         /// <summary>
-        /// btnBookIssuing элемент управления.
+        /// lkbtnBookIssuing элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnBookIssuing;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnBookIssuing;
 
         /// <summary>
-        /// btnMemberManagement элемент управления.
+        /// lkbtnMemberManagement элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnMemberManagement;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnMemberManagement;
     }
 }

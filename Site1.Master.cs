@@ -14,52 +14,52 @@ namespace E_LibraryManagement
 
         }
 
-        protected void btnAdminLogin_Click(object sender, EventArgs e)
+        protected void lkbtnAdminLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("adminlogin.aspx");
         }
 
-        protected void btnAuthorManagement_Click(object sender, EventArgs e)
+        protected void lkbtnAuthorManagement_Click(object sender, EventArgs e)
         {
             Response.Redirect("authorManagement.aspx");
         }
 
-        protected void btnPublisherManagement_Click(object sender, EventArgs e)
+        protected void lkbtnPublisherManagement_Click(object sender, EventArgs e)
         {
             Response.Redirect("publisherManagement.aspx");
         }
 
-        protected void btnBookInventory_Click(object sender, EventArgs e)
+        protected void lkbtnBookInventory_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookInventory.aspx");
         }
 
-        protected void btnBookIssuing_Click(object sender, EventArgs e)
+        protected void lkbtnBookIssuing_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookIssuing.aspx");
         }
 
-        protected void btnUserLogin_Click(object sender, EventArgs e)
+        protected void lkbtnUserLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("userlogin.aspx");
         }
 
-        protected void btnSignUp_Click(object sender, EventArgs e)
+        protected void lkbtnSignUp_Click(object sender, EventArgs e)
         {
             Response.Redirect("userSignUp.aspx");
         }
 
-        protected void btnViewBooks_Click(object sender, EventArgs e)
+        protected void lkbtnViewBooks_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookInventoryList.aspx");
         }
 
-        protected void btnMemberManagement_Click1(object sender, EventArgs e)
+        protected void lkbtnMemberManagement_Click1(object sender, EventArgs e)
         {
             Response.Redirect("memberManagement.aspx");
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void lkbtnLogout_Click(object sender, EventArgs e)
         {
 
         }
