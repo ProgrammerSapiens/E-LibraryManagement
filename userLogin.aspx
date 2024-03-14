@@ -58,7 +58,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:Button class="btn btn-primary btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" Style="width: 100%" />
+                                        <asp:Button class="btn btn-primary btn-lg" ID="btnSignUp" runat="server" Text="Sign Up" Style="width: 100%" OnClick="btnSignUp_Click" />
                                     </div>
                                 </div>
                             </div>

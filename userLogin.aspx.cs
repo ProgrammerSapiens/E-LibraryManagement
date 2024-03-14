@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data;
 
 namespace E_LibraryManagement
 {
@@ -31,19 +25,18 @@ namespace E_LibraryManagement
                         cmd.Parameters.AddWithValue("@memberId", txtUserUsername.Text.Trim());
                         cmd.Parameters.AddWithValue("@password", txtUserPassword.Text.Trim());
 
-                        var result = cmd.ExecuteScalar();
                         using (SqlDataReader reader = cmd.ExecuteReader())
                         {
                             if (reader.HasRows)
                             {
+                                reader.Read();
+
                                 string username = reader["member_id"].ToString();
                                 string fullName = reader["full_name"].ToString();
                                 string accountStatus = reader["account_status"].ToString();
 
-                                string encodedFullName = HttpUtility.JavaScriptStringEncode(fullName);
-                                Response.Write("<script>alert('Hello, " + encodedFullName + "')</script>");
                                 Session["username"] = username;
-                                Session["fullname"] = fullName;
+                                Session["full_name"] = fullName;
                                 Session["role"] = "user";
                                 Session["status"] = accountStatus;
                                 Response.Redirect("homepage.aspx");
@@ -59,6 +52,11 @@ namespace E_LibraryManagement
             {
                 Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
+        }
+
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("userSignUp.aspx");
         }
     }
 }
