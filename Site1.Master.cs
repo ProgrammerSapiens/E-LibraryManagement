@@ -8,7 +8,7 @@ namespace E_LibraryManagement
         {
             try
             {
-                if (Session["role"].Equals("admin"))
+                if (Session["role"] is "admin")
                 {
                     lkbtnAuthorManagement.Visible = true;
                     lkbtnPublisherManagement.Visible = true;
@@ -25,7 +25,7 @@ namespace E_LibraryManagement
                 }
                 else
                 {
-                    if (Session["role"].Equals("user"))
+                    if (Session["role"] is "user")
                     {
                         lkbtnLogout.Visible = true;
                         lkbtnHelloUser.Visible = true;
@@ -33,7 +33,7 @@ namespace E_LibraryManagement
                         lkbtnUserLogin.Visible = false;
                         lkbtnSignUp.Visible = false;
 
-                        lkbtnHelloUser.Text = "Hello " + Session["username"].ToString();
+                        lkbtnHelloUser.Text = "Hello " + Session["full_name"].ToString();
                     }
                     else
                     {
@@ -104,7 +104,10 @@ namespace E_LibraryManagement
 
         protected void lkbtnLogout_Click(object sender, EventArgs e)
         {
-
+            Session["username"] = null;
+            Session["full_name"] = null;
+            Session["role"] = null;
+            Response.Redirect("homepage.aspx");
         }
 
         protected void lkbtnHelloUser_Click(object sender, EventArgs e)
