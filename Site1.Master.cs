@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace E_LibraryManagement
 {
@@ -13,18 +8,52 @@ namespace E_LibraryManagement
         {
             try
             {
-                if (Session["role"].Equals(""))
+                if (Session["role"].Equals("admin"))
                 {
-                    lkbtnUserLogin.Visible = true;
-                    lkbtnSignUp.Visible = true;
+                    lkbtnAuthorManagement.Visible = true;
+                    lkbtnPublisherManagement.Visible = true;
+                    lkbtnBookInventory.Visible = true;
+                    lkbtnBookIssuing.Visible = true;
+                    lkbtnMemberManagement.Visible = true;
+                    lkbtnLogout.Visible = true;
+                    lkbtnHelloUser.Visible = true;
 
-                    lkbtnLogout.Visible = false;
-                    lkbtn.Visible = true;
+                    lkbtnUserLogin.Visible = false;
+                    lkbtnSignUp.Visible = false;
+
+                    lkbtnHelloUser.Text = "Hello Admin";
+                }
+                else
+                {
+                    if (Session["role"].Equals("user"))
+                    {
+                        lkbtnLogout.Visible = true;
+                        lkbtnHelloUser.Visible = true;
+
+                        lkbtnUserLogin.Visible = false;
+                        lkbtnSignUp.Visible = false;
+
+                        lkbtnHelloUser.Text = "Hello " + Session["username"].ToString();
+                    }
+                    else
+                    {
+                        lkbtnUserLogin.Visible = true;
+                        lkbtnSignUp.Visible = true;
+
+                        lkbtnLogout.Visible = false;
+                        lkbtnHelloUser.Visible = false;
+                    }
+
+                    lkbtnAuthorManagement.Visible = false;
+                    lkbtnPublisherManagement.Visible = false;
+                    lkbtnBookInventory.Visible = false;
+                    lkbtnBookIssuing.Visible = false;
+                    lkbtnMemberManagement.Visible = false;
                 }
             }
             catch (Exception ex)
             {
-
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
         }
 
