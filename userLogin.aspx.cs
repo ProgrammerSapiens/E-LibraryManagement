@@ -46,7 +46,7 @@ namespace E_LibraryManagement
                                 Session["fullname"] = fullName;
                                 Session["role"] = "user";
                                 Session["status"] = accountStatus;
-                                Response.Redirect("homepage.aspx")
+                                Response.Redirect("homepage.aspx");
                             }
                             else
                                 Response.Write("<script>alert('Incorrect username or password')</script>");
