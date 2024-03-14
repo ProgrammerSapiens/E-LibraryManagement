@@ -42,18 +42,18 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <label>Email</label>
+                                    <label>Username</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="Email" TextMode="Email" />
+                                        <asp:TextBox class="form-control" ID="txtAdminUsername" runat="server" placeholder="Username"/>
                                     </div>
 
                                     <label>Password</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="Password" TextMode="Password" />
+                                        <asp:TextBox class="form-control" ID="txtAdminPassword" runat="server" placeholder="Password" TextMode="Password" />
                                     </div>
 
                                     <div class="form-group">
-                                        <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Login" Style="width: 100%" />
+                                        <asp:Button class="btn btn-success btn-lg" ID="btnAdminLogin" runat="server" Text="Login" Style="width: 100%" OnClick="btnAdminLogin_Click" />
                                     </div>
 
                                 </div>

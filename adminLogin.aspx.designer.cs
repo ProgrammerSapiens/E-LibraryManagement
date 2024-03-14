@@ -15,30 +15,30 @@ namespace E_LibraryManagement
     {
 
         /// <summary>
-        /// TextBox1 элемент управления.
+        /// txtAdminUsername элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtAdminUsername;
 
         /// <summary>
-        /// TextBox2 элемент управления.
+        /// txtAdminPassword элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtAdminPassword;
 
         /// <summary>
-        /// Button1 элемент управления.
+        /// btnAdminLogin элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnAdminLogin;
     }
 }
