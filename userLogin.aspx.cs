@@ -22,7 +22,7 @@ namespace E_LibraryManagement
         {
             try
             {
-                string query = "SELECT full_name FROM member_master_tbl WHERE member_id=@memberId AND password = @password";
+                string query = "SELECT * FROM member_master_tbl WHERE member_id=@memberId AND password = @password";
                 using (SqlConnection con = new SqlConnection(strcon))
                 {
                     con.Open();
