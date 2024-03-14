@@ -15,39 +15,39 @@ namespace E_LibraryManagement
     {
 
         /// <summary>
-        /// TextBox1 элемент управления.
+        /// txtUserUsername элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtUserUsername;
 
         /// <summary>
-        /// TextBox2 элемент управления.
+        /// txtUserPassword элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtUserPassword;
 
         /// <summary>
-        /// Button1 элемент управления.
+        /// btnUserLogin элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnUserLogin;
 
         /// <summary>
-        /// Button2 элемент управления.
+        /// btnSignUp элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnSignUp;
     }
 }
