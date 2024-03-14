@@ -11,7 +11,21 @@ namespace E_LibraryManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if (Session["role"].Equals(""))
+                {
+                    lkbtnUserLogin.Visible = true;
+                    lkbtnSignUp.Visible = true;
 
+                    lkbtnLogout.Visible = false;
+                    lkbtn.Visible = true;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         protected void lkbtnAdminLogin_Click(object sender, EventArgs e)
@@ -60,6 +74,11 @@ namespace E_LibraryManagement
         }
 
         protected void lkbtnLogout_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lkbtnHelloUser_Click(object sender, EventArgs e)
         {
 
         }

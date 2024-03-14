@@ -69,13 +69,13 @@ namespace E_LibraryManagement
         protected global::System.Web.UI.WebControls.LinkButton lkbtnLogout;
 
         /// <summary>
-        /// LinkButton5 элемент управления.
+        /// lkbtnHelloUser элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnHelloUser;
 
         /// <summary>
         /// ContentPlaceHolder1 элемент управления.
