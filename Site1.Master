@@ -63,7 +63,7 @@
 
 
         <!--Main Content Placeholder -->
-        <div style="margin-bottom: 10vh;">
+        <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
