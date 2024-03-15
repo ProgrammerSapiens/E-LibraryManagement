@@ -60,15 +60,6 @@ namespace E_LibraryManagement
         protected global::System.Web.UI.WebControls.LinkButton lkbtnSignUp;
 
         /// <summary>
-        /// lkbtnLogout элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lkbtnLogout;
-
-        /// <summary>
         /// lkbtnHelloUser элемент управления.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,15 @@ namespace E_LibraryManagement
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lkbtnHelloUser;
+
+        /// <summary>
+        /// lkbtnLogout элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lkbtnLogout;
 
         /// <summary>
         /// ContentPlaceHolder1 элемент управления.

@@ -24,7 +24,7 @@
 <body>
     <form id="form1" runat="server" class="form-wrapper">
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">
                     <img src="Source/imgs/books.png" width="30" height="30" />
                     E-Library
@@ -37,26 +37,16 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="homepage.aspx">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lkbtnViewBooks" runat="server" OnClick="lkbtnViewBooks_Click">View Books</asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lkbtnUserLogin" runat="server" OnClick="lkbtnUserLogin_Click">User Login</asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lkbtnSignUp" runat="server" OnClick="lkbtnSignUp_Click">Sign Up</asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lkbtnLogout" runat="server" OnClick="lkbtnLogout_Click">Logout</asp:LinkButton>
-                        </li>
-                        <li class="nav-item active">
-                            <asp:LinkButton class="nav-link" ID="lkbtnHelloUser" runat="server" OnClick="lkbtnHelloUser_Click">Hello user</asp:LinkButton>
-                        </li>
-                    </ul>
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-link" href="homepage.aspx">Home</a>
+                        <asp:LinkButton class="nav-link" ID="lkbtnViewBooks" runat="server" OnClick="lkbtnViewBooks_Click">View Books</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" ID="lkbtnUserLogin" runat="server" OnClick="lkbtnUserLogin_Click">User Login</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" ID="lkbtnSignUp" runat="server" OnClick="lkbtnSignUp_Click">Sign Up</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" ID="lkbtnHelloUser" runat="server" OnClick="lkbtnHelloUser_Click">Hello user</asp:LinkButton>
+                    </div>
+                    <div class="navbar-nav">
+                        <asp:LinkButton class="nav-link" ID="lkbtnLogout" runat="server" OnClick="lkbtnLogout_Click">Logout</asp:LinkButton>
+                    </div>
                 </div>
             </nav>
         </div>
