@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <section>
-        <img src="Source/imgs/home-bg.jpg" class="img-fluid" />
+        <img src="Source/imgs/home-bg.jpg" class="img-fluid"/>
     </section>
 
     <section>
