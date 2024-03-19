@@ -18,6 +18,7 @@ namespace E_LibraryManagement
                     lkbtnLogout.Visible = true;
                     lkbtnHelloUser.Visible = true;
 
+                    lkbtnAdminLogin.Visible = false;
                     lkbtnUserLogin.Visible = false;
                     lkbtnSignUp.Visible = false;
 
@@ -32,11 +33,13 @@ namespace E_LibraryManagement
 
                         lkbtnUserLogin.Visible = false;
                         lkbtnSignUp.Visible = false;
+                        lkbtnAdminLogin.Visible = false;
 
                         lkbtnHelloUser.Text = "Hello " + Session["full_name"].ToString();
                     }
                     else
                     {
+                        lkbtnAdminLogin.Visible = true;
                         lkbtnUserLogin.Visible = true;
                         lkbtnSignUp.Visible = true;
 

@@ -45,8 +45,8 @@
                                     <label>Author ID</label>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="ID" />
-                                            <asp:Button class="btn btn-secondary" ID="Button4" runat="server" Text="Go" />
+                                            <asp:TextBox CssClass="form-control" ID="txtAuthorId" runat="server" placeholder="ID" />
+                                            <asp:Button CssClass="btn btn-secondary" ID="btnGoToAuthorId" runat="server" Text="Go" OnClick="btnGoToAuthorId_Click" />
                                         </div>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@
                                 <div class="col-md-8">
                                     <label>Author Name</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox4" runat="server" placeholder="Author Name" />
+                                        <asp:TextBox class="form-control" ID="txtAuthorName" runat="server" placeholder="Author Name" />
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-success btn-lg" ID="Button1" runat="server" Text="Add" Style="width: 100%" />
+                                            <asp:Button class="btn btn-success btn-lg" ID="btnAddAuthor" runat="server" Text="Add" Style="width: 100%" OnClick="btnAddAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -71,7 +71,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-primary btn-lg" ID="Button2" runat="server" Text="Update" Style="width: 100%" />
+                                            <asp:Button class="btn btn-primary btn-lg" ID="btnUpdateAuthor" runat="server" Text="Update" Style="width: 100%" OnClick="btnUpdateAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -79,7 +79,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-danger btn-lg" ID="Button3" runat="server" Text="Delete" Style="width: 100%" />
+                                            <asp:Button class="btn btn-danger btn-lg" ID="btnDeleteAuthor" runat="server" Text="Delete" Style="width: 100%" OnClick="btnDeleteAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -110,7 +110,13 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <asp:GridView class="table talbe-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
+                                    <asp:GridView class="table table-striped table-bordered" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
+                                        <Columns>
+                                            <asp:BoundField DataField="author_id" HeaderText="author_id" ReadOnly="True" SortExpression="author_id" />
+                                            <asp:BoundField DataField="author_name" HeaderText="author_name" SortExpression="author_name" />
+                                        </Columns>
+                                    </asp:GridView>
                                 </div>
                             </div>
 
