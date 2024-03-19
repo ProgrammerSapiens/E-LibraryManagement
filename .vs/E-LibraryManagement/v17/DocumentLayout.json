@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\authormanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:authormanagement.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\authormanagement.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:authormanagement.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:homepage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|c:\\users\\potatokiller\\source\\repos\\e-librarymanagement\\site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:site1.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+      "AbsoluteMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{BDB98A42-693C-45ED-BDC9-1934FD531D0A}|E-LibraryManagement.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "homepage.aspx",
               "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\homepage.aspx",
               "RelativeDocumentMoniker": "homepage.aspx",
@@ -38,20 +50,59 @@
               "RelativeToolTip": "homepage.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-15T06:57:42.554Z",
+              "WhenOpened": "2024-03-19T06:31:55.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAB5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-03-18T15:21:53.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "authorManagement.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\authorManagement.aspx.cs",
+              "RelativeDocumentMoniker": "authorManagement.aspx.cs",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\authorManagement.aspx.cs",
+              "RelativeToolTip": "authorManagement.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:37:55.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "authorManagement.aspx",
+              "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\authorManagement.aspx",
+              "RelativeDocumentMoniker": "authorManagement.aspx",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\authorManagement.aspx*",
+              "RelativeToolTip": "authorManagement.aspx*",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-18T14:24:08.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Site1.Master",
               "DocumentMoniker": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master",
               "RelativeDocumentMoniker": "Site1.Master",
-              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master*",
-              "RelativeToolTip": "Site1.Master*",
+              "ToolTip": "C:\\Users\\PotatoKiller\\source\\repos\\E-LibraryManagement\\Site1.Master",
+              "RelativeToolTip": "Site1.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-03-15T06:55:26.297Z",
+              "WhenOpened": "2024-03-18T14:24:04.767Z",
               "EditorCaption": ""
             }
           ]
