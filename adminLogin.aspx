@@ -11,7 +11,7 @@
     <div class="container-fluid" style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mx-auto" style="margin-top: 18vh;">
+                <div class="col-md-4 mx-auto" style="margin-top: 16vh;">
 
                     <div class="card">
                         <div class="card-body">
@@ -34,17 +34,9 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <center>
-                                        <hr>
-                                    </center>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col">
                                     <label>Username</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="txtAdminUsername" runat="server" placeholder="Username"/>
+                                        <asp:TextBox class="form-control" ID="txtAdminUsername" runat="server" placeholder="Username" />
                                     </div>
 
                                     <label>Password</label>

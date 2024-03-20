@@ -12,7 +12,7 @@
     <div class="container-fluid" style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 mx-auto" style="margin-top: 18vh;">
+                <div class="col-md-4 mx-auto" style="margin-top: 16vh;">
 
                     <div class="card">
                         <div class="card-body">
@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="col">
                                     <center>
-                                        <h3>Member Login</h3>
+                                        <h3>User Login</h3>
                                     </center>
                                 </div>
                             </div>
