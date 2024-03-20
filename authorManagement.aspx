@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-5" style="margin-top: 20vh;">
 
-                    <div class="card">
+                    <div class="card text-white bg-dark">
                         <div class="card-body">
 
                             <div class="row">
@@ -54,7 +54,7 @@
                                 <div class="col-md-8">
                                     <label>Author Name</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="txtAuthorName" runat="server" placeholder="Author Name" />
+                                        <asp:TextBox CssClass="form-control" ID="txtAuthorName" runat="server" placeholder="Author Name" />
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-success btn-lg" ID="btnAddAuthor" runat="server" Text="Add" Style="width: 100%" OnClick="btnAddAuthor_Click" />
+                                            <asp:Button CssClass="btn btn-success btn-lg" ID="btnAddAuthor" runat="server" Text="Add" Style="width: 100%" OnClick="btnAddAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -71,7 +71,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-primary btn-lg" ID="btnUpdateAuthor" runat="server" Text="Update" Style="width: 100%" OnClick="btnUpdateAuthor_Click" />
+                                            <asp:Button CssClass="btn btn-primary btn-lg" ID="btnUpdateAuthor" runat="server" Text="Update" Style="width: 100%" OnClick="btnUpdateAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -79,7 +79,7 @@
                                 <div class="col-4">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-danger btn-lg" ID="btnDeleteAuthor" runat="server" Text="Delete" Style="width: 100%" OnClick="btnDeleteAuthor_Click" />
+                                            <asp:Button CssClass="btn btn-danger btn-lg" ID="btnDeleteAuthor" runat="server" Text="Delete" Style="width: 100%" OnClick="btnDeleteAuthor_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -88,8 +88,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-7" style="margin-top: 20vh;">
-                    <div class="card">
+                <div class="col-md-7" style="margin-top: 5vh;">
+                    <div class="card text-white bg-dark">
                         <div class="card-body">
 
                             <div class="row">
@@ -109,14 +109,27 @@
                             </div>
 
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Search..."></asp:TextBox>
+                                            <asp:Button CssClass="btn btn-primary" ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
                                 <div class="col">
-                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
-                                    <asp:GridView class="table table-striped table-bordered" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
-                                        <Columns>
-                                            <asp:BoundField DataField="author_id" HeaderText="author_id" ReadOnly="True" SortExpression="author_id" />
-                                            <asp:BoundField DataField="author_name" HeaderText="author_name" SortExpression="author_name" />
-                                        </Columns>
-                                    </asp:GridView>
+                                    <div style="overflow-y: auto; max-height: 500px;">
+                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
+                                        <asp:GridView CssClass="table table-striped table-bordered table-dark table-hover" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
+                                            <Columns>
+                                                <asp:BoundField DataField="author_id" HeaderText="Author Id" ReadOnly="True" SortExpression="author_id" />
+                                                <asp:BoundField DataField="author_name" HeaderText="Author Name" SortExpression="author_name" />
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
                                 </div>
                             </div>
 

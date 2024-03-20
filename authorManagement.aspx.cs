@@ -34,7 +34,7 @@ namespace E_LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('The author doesn't exist!')</script>");
+                Response.Write("<script>alert('The ID does not exist')</script>");
             }
         }
         protected void btnDeleteAuthor_Click(object sender, EventArgs e)
@@ -47,12 +47,18 @@ namespace E_LibraryManagement
             }
             else
             {
-                Response.Write("<script>alert('The author doesn't exist!')</script>");
+                Response.Write("<script>alert('The ID does not exist')</script>");
             }
+        }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchKeyword = txtSearch.Text;
+
+            SqlDataSource1.SelectCommand = "SELECT * FROM [author_master_tbl] WHERE author_name LIKE '%" + searchKeyword + "%'";
         }
         protected void btnGoToAuthorId_Click(object sender, EventArgs e)
         {
-
+            getAuthorById();
         }
         bool AuthorExists()
         {
@@ -147,6 +153,38 @@ namespace E_LibraryManagement
                         con.Close();
 
                         Response.Write("<script>alert('The author was successfuly deleted')</script>");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+            }
+        }
+        void getAuthorById()
+        {
+            try
+            {
+                string query = "SELECT author_name FROM author_master_tbl WHERE author_id=@author_id";
+                using (SqlConnection con = new SqlConnection(strcon))
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@author_id", txtAuthorId.Text.Trim());
+
+                        var result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            txtAuthorName.Text = result.ToString();
+                        }
+                        else
+                        {
+                            Response.Write("<script>alert('Author not found')</script>");
+                        }
+
+                        con.Close();
                     }
                 }
             }
