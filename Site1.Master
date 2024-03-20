@@ -12,8 +12,6 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <!-- Pagestyle css-->
     <link href="css/customStyleSheet.css" rel="stylesheet" />
-    <!-- datatables css -->
-    <link href="datatables/css/dataTables.dataTables.min.css" rel="stylesheet" />
     <!-- fontawesome css -->
     <link href="fontawesome/css/all.css" rel="stylesheet" />
 
@@ -36,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="homepage.sspx">Home</a>
+                            <asp:LinkButton CssClass="nav-link" ID="lkbtnHome" runat="server" OnClick="lkbtnHome_Click">Home</asp:LinkButton>
                         </li>
                         <li class="nav-item active">
                             <asp:LinkButton CssClass="nav-link" ID="lkbtnViewBooks" runat="server" OnClick="lkbtnViewBooks_Click">View Books</asp:LinkButton>
@@ -104,7 +102,5 @@
     </form>
     <!-- Bootstrap JS -->
     <script src="Scripts/bootstrap.min.js"></script>
-    <!-- Datatables JS -->
-    <script src="datatables/js/dataTables.min.js"></script>
 </body>
 </html>

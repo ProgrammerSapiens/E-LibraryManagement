@@ -117,5 +117,10 @@ namespace E_LibraryManagement
         {
 
         }
+
+        protected void lkbtnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("homepage.aspx");
+        }
     }
 }
