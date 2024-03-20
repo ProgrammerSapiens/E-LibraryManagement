@@ -101,14 +101,6 @@
                             </div>
 
                             <div class="row">
-                                <div class="col">
-                                    <center>
-                                        <hr>
-                                    </center>
-                                </div>
-                            </div>
-
-                            <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="input-group">

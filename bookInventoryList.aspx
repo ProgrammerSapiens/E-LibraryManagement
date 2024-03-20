@@ -6,12 +6,12 @@
     <div class="container-fluid " style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
         <div class="row">
             <div class="col-md-12">
-                <div class="card" style="margin-top: 1vh;">
+                <div class="card text-white bg-dark" style="margin-top: 1vh;">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h2>Book Inventory List</h2>
+                                    <h3>Book Inventory List</h3>
                                 </center>
                             </div>
                         </div>

@@ -9,11 +9,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid" style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
-        <div class="container-fluid"">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5" style="margin-top: 4vh;">
 
-                    <div class="card">
+                    <div class="card text-white bg-dark">
                         <div class="card-body">
 
                             <div class="row">
@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="col-md-7" style="margin-top: 4vh;">
-                    <div class="card">
+                    <div class="card text-white bg-dark">
                         <div class="card-body">
 
                             <div class="row">
@@ -232,7 +232,7 @@
 
                             <div class="row">
                                 <div class="col">
-                                    <asp:GridView class="table talbe-striped table-bordered" ID="GridView1" runat="server"></asp:GridView>
+                                    <asp:GridView class="table table-striped table-bordered table-dark" ID="GridView1" runat="server"></asp:GridView>
                                 </div>
                             </div>
 
