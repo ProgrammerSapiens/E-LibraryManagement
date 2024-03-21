@@ -104,7 +104,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Search..."></asp:TextBox>
+                                            <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Enter a name..."></asp:TextBox>
                                             <asp:Button CssClass="btn btn-primary" ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
                                         </div>
                                     </div>
