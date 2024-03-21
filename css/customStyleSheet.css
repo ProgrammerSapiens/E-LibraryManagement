@@ -42,3 +42,9 @@ label, h3, h4 {
     .readOnly:focus {
         color: gray;
     }
+
+.backgroundImage {
+    background-image: url(../Source/imgs/background.jpg);
+    background-size: cover;
+    height: 100vh;
+}

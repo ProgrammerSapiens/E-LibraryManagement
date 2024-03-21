@@ -8,7 +8,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid" style="background-image: url(../Source/imgs/background.jpg); background-size: cover; height: 100vh;">
+    <div class="container-fluid backgroundImage">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto" style="margin-top: 5vh">
