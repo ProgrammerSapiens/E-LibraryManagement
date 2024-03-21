@@ -45,8 +45,8 @@
                                     <label>Member ID</label>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <asp:TextBox CssClass="form-control" ID="TextBox3" runat="server" placeholder="Member ID" />
-                                            <asp:Button class="btn btn-secondary" ID="Button4" runat="server" Text="Go" />
+                                            <asp:TextBox CssClass="form-control" ID="txtUserId" runat="server" placeholder="ID" />
+                                            <asp:Button class="btn btn-secondary" ID="btnGoToUserId" runat="server" Text="Go" OnClick="btnGoToUserId_Click" />
                                         </div>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@
                                 <div class="col-md-4">
                                     <label>Full Name</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox4" runat="server" placeholder="Full Name" ReadOnly="true" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserName" runat="server" placeholder="Full Name" ReadOnly="true" />
                                     </div>
                                 </div>
 
@@ -62,10 +62,10 @@
                                     <label>Account Status</label>
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <asp:TextBox CssClass="form-control" ID="TextBox7" runat="server" placeholder="Account Status" ReadOnly="true" />
-                                            <asp:LinkButton class="btn btn-success" ID="LinkButton1" runat="server" Text="S"><i class="fa-regular fa-circle-check"></i></asp:LinkButton>
-                                            <asp:LinkButton class="btn btn-warning" ID="LinkButton2" runat="server" Text="P"><i class="fa-regular fa-circle-pause"></i></asp:LinkButton>
-                                            <asp:LinkButton class="btn btn-danger" ID="LinkButton3" runat="server" Text="D"><i class="fa-regular fa-circle-xmark"></i></asp:LinkButton>
+                                            <asp:TextBox CssClass="form-control readOnly" ID="txtAccountStatus" runat="server" placeholder="Account Status" ReadOnly="true" />
+                                            <asp:LinkButton class="btn btn-success" ID="lkbtnActiveStatus" runat="server" Text="S" OnClick="lkbtnActiveStatus_Click"><i class="fa-regular fa-circle-check"></i></asp:LinkButton>
+                                            <asp:LinkButton class="btn btn-warning" ID="lkbtnPendingStatus" runat="server" Text="P" OnClick="lkbtnPendingStatus_Click"><i class="fa-regular fa-circle-pause"></i></asp:LinkButton>
+                                            <asp:LinkButton class="btn btn-danger" ID="lkbtnDiactivateStatus" runat="server" Text="D" OnClick="lkbtnDiactivateStatus_Click"><i class="fa-regular fa-circle-xmark"></i></asp:LinkButton>
                                         </div>
                                     </div>
                                 </div>
@@ -73,23 +73,23 @@
 
                             <div class="row">
                                 <div class="col-md-3">
-                                    <label>DOB</label>
+                                    <label>Date of birth</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox1" runat="server" placeholder="DOB" ReadOnly="true" TextMode="Date" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserDateOfBirth" runat="server" placeholder="DOB" ReadOnly="true" TextMode="Date" />
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label>Contact Number</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox2" runat="server" placeholder="Contact Number" ReadOnly="true" TextMode="Phone" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserContactNumber" runat="server" placeholder="Contact Number" ReadOnly="true" TextMode="Phone" />
                                     </div>
                                 </div>
 
                                 <div class="col-md-5">
-                                    <label>Email ID</label>
+                                    <label>Email</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="Email ID" ReadOnly="true" TextMode="Email" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserEmail" runat="server" placeholder="Email" ReadOnly="true" TextMode="Email" />
                                     </div>
                                 </div>
                             </div>
@@ -98,21 +98,21 @@
                                 <div class="col-md-4">
                                     <label>State</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox5" runat="server" placeholder="State" ReadOnly="true" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserState" runat="server" placeholder="State" ReadOnly="true" />
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label>City</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox6" runat="server" placeholder="City" ReadOnly="true" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserCity" runat="server" placeholder="City" ReadOnly="true" />
                                     </div>
                                 </div>
 
                                 <div class="col-md-4">
                                     <label>Pin Code</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Pin Code" TextMode="Number" ReadOnly="true" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserPincode" runat="server" placeholder="Pin Code" TextMode="Number" ReadOnly="true" />
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
                                 <div class="col-md-12">
                                     <label>Full Postal Adress</label>
                                     <div class="form-group">
-                                        <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Full Postal Adress" ReadOnly="true" TextMode="MultiLine" />
+                                        <asp:TextBox class="form-control readOnly" ID="txtUserFullAdress" runat="server" placeholder="Full Postal Adress" ReadOnly="true" TextMode="MultiLine" />
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                                 <div class="col-12">
                                     <center>
                                         <div class="form-group">
-                                            <asp:Button class="btn btn-danger btn-lg" ID="Button3" runat="server" Text="Delete User Permanently" Style="width: 100%" />
+                                            <asp:Button class="btn btn-danger btn-lg" ID="btnDeleteUser" runat="server" Text="Delete User Permanently" Style="width: 100%" OnClick="btnDeleteUser_Click" />
                                         </div>
                                     </center>
                                 </div>
@@ -160,8 +160,32 @@
                             </div>
 
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Enter a name..."></asp:TextBox>
+                                            <asp:Button CssClass="btn btn-primary" ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
                                 <div class="col">
-                                    <asp:GridView class="table table-striped table-bordered table-dark" ID="GridView1" runat="server"></asp:GridView>
+                                    <div style="overflow-y: auto; max-height: 60vh;">
+                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" SelectCommand="SELECT * FROM [member_master_tbl]"></asp:SqlDataSource>
+                                        <asp:GridView class="table table-striped table-bordered table-dark" ID="grdUserList" runat="server" AutoGenerateColumns="False" DataKeyNames="member_id" DataSourceID="SqlDataSource1">
+                                            <Columns>
+                                                <asp:BoundField DataField="member_id" HeaderText="Member ID" ReadOnly="True" SortExpression="member_id" />
+                                                <asp:BoundField DataField="full_name" HeaderText="Full Name" SortExpression="full_name" />
+                                                <asp:BoundField DataField="account_status" HeaderText="Account Status" SortExpression="account_status" />
+                                                <asp:BoundField DataField="contact_no" HeaderText="Contact Number" SortExpression="contact_no" />
+                                                <asp:BoundField DataField="email" HeaderText="Email" SortExpression="email" />
+                                                <asp:BoundField DataField="state" HeaderText="State" SortExpression="state" />
+                                                <asp:BoundField DataField="city" HeaderText="City" SortExpression="city" />
+                                            </Columns>
+                                        </asp:GridView>
+                                    </div>
                                 </div>
                             </div>
 
