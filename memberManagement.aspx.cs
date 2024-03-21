@@ -13,31 +13,80 @@ namespace E_LibraryManagement
         }
         protected void btnGoToUserId_Click(object sender, EventArgs e)
         {
-            GetMemberById();
+            if (MemberExists())
+            {
+                GetMemberById();
+            }
         }
         protected void lkbtnActiveStatus_Click(object sender, EventArgs e)
         {
-            UpdateMemberStatus("active");
+            if (MemberExists())
+            {
+                UpdateMemberStatus("active");
+            }
         }
         protected void lkbtnPendingStatus_Click(object sender, EventArgs e)
         {
-            UpdateMemberStatus("pending");
+            if (MemberExists())
+            {
+                UpdateMemberStatus("pending");
+            }
         }
         protected void lkbtnDiactivateStatus_Click(object sender, EventArgs e)
         {
-            UpdateMemberStatus("diactivate");
+            if (MemberExists())
+            {
+                UpdateMemberStatus("diactivate");
+            }
         }
         protected void btnDeleteUser_Click(object sender, EventArgs e)
         {
-            DeleteMember();
-            grdUserList.DataBind();
-            Clear();
+            if (MemberExists())
+            {
+                DeleteMember();
+                grdUserList.DataBind();
+                Clear();
+            }
         }
         protected void btnSearch_Click(object sender, EventArgs e)
         {
             string searchKeyword = txtSearch.Text;
 
-            SqlDataSource1.SelectCommand = "SELECT * FROM [member_master_tbl] WHERE full_name LIKE '%" + searchKeyword + "%'";
+            SqlDataSource1.SelectCommand = "SELECT * FROM [member_master_tbl] WHERE " +
+        "full_name LIKE '%" + searchKeyword + "%' OR " +
+        "account_status LIKE '%" + searchKeyword + "%' OR " +
+        "contact_no LIKE '%" + searchKeyword + "%' OR " +
+        "email LIKE '%" + searchKeyword + "%' OR " +
+        "state LIKE '%" + searchKeyword + "%' OR " +
+        "city LIKE '%" + searchKeyword + "%' OR " +
+        "member_id LIKE '%" + searchKeyword + "%'";
+        }
+        bool MemberExists()
+        {
+            try
+            {
+                string query = "SELECT * FROM member_master_tbl WHERE member_id=@member_id";
+                using (SqlConnection con = new SqlConnection(strcon))
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@member_id", txtUserId.Text.Trim());
+
+                        if (cmd.ExecuteScalar() == null)
+                        {
+                            Response.Write("<script>alert('The ID does not exist')</script>");
+                            return false;
+                        }
+                        return true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "')</script>");
+                return true;
+            }
         }
         void GetMemberById()
         {
