@@ -54,7 +54,9 @@ namespace E_LibraryManagement
         {
             string searchKeyword = txtSearch.Text;
 
-            SqlDataSource1.SelectCommand = "SELECT * FROM [author_master_tbl] WHERE author_name LIKE '%" + searchKeyword + "%'";
+            SqlDataSource1.SelectCommand = "SELECT * FROM [author_master_tbl] WHERE " +
+                "author_name LIKE '%" + searchKeyword + "%' OR " +
+                "author_id LIKE '%" + searchKeyword + "%'";
         }
         protected void btnGoToAuthorId_Click(object sender, EventArgs e)
         {
