@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-6 mx-auto" style="margin-top: 5vh">
 
-                    <div class="card text-white bg-dark">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">

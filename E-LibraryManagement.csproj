@@ -85,8 +85,10 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="css\customStyleSheet.css" />
-    <Content Include="datatables\css\dataTables.dataTables.min.css" />
-    <Content Include="datatables\js\dataTables.min.js" />
+    <Content Include="DataTables\css\dataTables.jqueryui.min.css" />
+    <Content Include="DataTables\css\datatables.min.css" />
+    <Content Include="DataTables\js\dataTables.jqueryui.min.js" />
+    <Content Include="DataTables\js\datatables.min.js" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
@@ -2169,6 +2171,11 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="Source\imgs\background.jpg" />
     <Content Include="userProfile.aspx" />
     <Content Include="userSignUp.aspx" />
@@ -2361,6 +2368,8 @@
     <Content Include="Scripts\bootstrap.esm.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

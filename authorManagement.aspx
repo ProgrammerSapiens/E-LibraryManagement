@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-5" style="margin-top: 20vh;">
 
-                    <div class="card text-white bg-dark">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">
@@ -89,7 +89,7 @@
                 </div>
 
                 <div class="col-md-7" style="margin-top: 5vh;">
-                    <div class="card text-white bg-dark">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">
@@ -111,16 +111,16 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <div class="row semi-transparent-table">
                                 <div class="col">
                                     <div style="overflow-y: auto; max-height: 60vh;">
-                                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
-                                        <asp:GridView CssClass="table table-striped table-bordered table-dark table-hover" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
-                                            <Columns>
-                                                <asp:BoundField DataField="author_id" HeaderText="Author Id" ReadOnly="True" SortExpression="author_id" />
-                                                <asp:BoundField DataField="author_name" HeaderText="Author Name" SortExpression="author_name" />
-                                            </Columns>
-                                        </asp:GridView>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
+                                    <asp:GridView CssClass="table table-striped table-dark table-bordered table-hover" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
+                                        <Columns>
+                                            <asp:BoundField DataField="author_id" HeaderText="Author Id" ReadOnly="True" SortExpression="author_id" />
+                                            <asp:BoundField DataField="author_name" HeaderText="Author Name" SortExpression="author_name" />
+                                        </Columns>
+                                    </asp:GridView>
                                     </div>
                                 </div>
                             </div>

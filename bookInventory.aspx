@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-5" style="margin-top: 1vh;">
 
-                    <div class="card text-white bg-dark">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">
@@ -212,7 +212,7 @@
                 </div>
 
                 <div class="col-md-7" style="margin-top: 1vh;">
-                    <div class="card text-white bg-dark">
+                    <div class="card">
                         <div class="card-body">
 
                             <div class="row">
