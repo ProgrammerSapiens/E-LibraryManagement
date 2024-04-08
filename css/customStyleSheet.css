@@ -8,10 +8,12 @@
     }
 
 #footer1 {
+    height: 30px;
     background: #484848;
 }
 
 #footer2 {
+    height: 30px;
     background: #383838;
 }
 
@@ -47,4 +49,9 @@ label, h3, h4 {
     background-image: url(../Source/imgs/background.jpg);
     background-size: cover;
     height: 100vh;
+}
+
+#imgview {
+    height: 100px;
+    object-fit: cover;
 }
