@@ -39,3 +39,8 @@ C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\roslyn\System.Buffers
 C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\roslyn\System.Memory.dll
 C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\roslyn\System.Numerics.Vectors.dll
 C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\Source\books\b1.jpg
+C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\Source\books\b2.jpg
+C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\Source\books\b3.jpg
+C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\Source\books\b4.jpg
+C:\Users\PotatoKiller\source\repos\E-LibraryManagement\bin\Source\books\b5.jpg

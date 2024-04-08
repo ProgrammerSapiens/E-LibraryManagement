@@ -2163,6 +2163,7 @@
     <Content Include="fontawesome\svgs\solid\yin-yang.svg" />
     <Content Include="fontawesome\svgs\solid\z.svg" />
     <Content Include="homepage.aspx" />
+    <Content Include="jQuery\jquery-3.7.1.js" />
     <Content Include="memberManagement.aspx" />
     <Content Include="publisherManagement.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -2179,11 +2180,21 @@
     <Content Include="Source\imgs\background.jpg" />
     <Content Include="userProfile.aspx" />
     <Content Include="userSignUp.aspx" />
-    <Content Include="Source\books\b1.jpg" />
-    <Content Include="Source\books\b2.jpg" />
-    <Content Include="Source\books\b3.jpg" />
-    <Content Include="Source\books\b4.jpg" />
-    <Content Include="Source\books\b5.jpg" />
+    <Content Include="Source\books\b1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Source\books\b2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Source\books\b3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Source\books\b4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Source\books\b5.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Source\imgs\adminuser.png" />
     <Content Include="Source\imgs\book-online.png" />
     <Content Include="Source\imgs\books.png" />
@@ -2377,7 +2388,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="book_inventory\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
