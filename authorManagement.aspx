@@ -111,9 +111,9 @@
                                 </div>
                             </div>
 
-                            <div class="row semi-transparent-table">
+                            <div class="row">
                                 <div class="col">
-                                    <div style="overflow-y: auto; max-height: 60vh;">
+                                    <div style="overflow-y: auto; max-height: 62vh;">
                                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:elbraryDBConnectionString %>" ProviderName="<%$ ConnectionStrings:elbraryDBConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [author_master_tbl]"></asp:SqlDataSource>
                                     <asp:GridView CssClass="table table-striped table-dark table-bordered table-hover" ID="grdAuthorList" runat="server" AutoGenerateColumns="False" DataKeyNames="author_id" DataSourceID="SqlDataSource1">
                                         <Columns>
