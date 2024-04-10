@@ -11,7 +11,20 @@ namespace E_LibraryManagement
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            grdBookInventoryList.DataBind();
+        }
 
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            string searchKeyword = txtSearch.Text;
+
+            SqlDataSource1.SelectCommand = "SELECT * FROM [book_master_tbl] WHERE " +
+                "book_name LIKE '%" + searchKeyword + "%' OR " +
+                "genre LIKE '%" + searchKeyword + "%' OR " +
+                "book_id LIKE '%" + searchKeyword + "%' OR " +
+                "author_name LIKE '%" + searchKeyword + "%' OR " +
+                "publisher_name LIKE '%" + searchKeyword + "%' OR " +
+                "language LIKE '%" + searchKeyword + "%'";
         }
     }
 }
