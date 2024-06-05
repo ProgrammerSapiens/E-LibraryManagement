@@ -59,52 +59,42 @@ namespace E_LibraryManagement
                 Response.Write("<script>alert('" + ex.Message + "')</script>");
             }
         }
-
         protected void lkbtnAdminLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("adminlogin.aspx");
         }
-
         protected void lkbtnAuthorManagement_Click(object sender, EventArgs e)
         {
             Response.Redirect("authorManagement.aspx");
         }
-
         protected void lkbtnPublisherManagement_Click(object sender, EventArgs e)
         {
             Response.Redirect("publisherManagement.aspx");
         }
-
         protected void lkbtnBookInventory_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookInventory.aspx");
         }
-
         protected void lkbtnBookIssuing_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookIssuing.aspx");
         }
-
         protected void lkbtnUserLogin_Click(object sender, EventArgs e)
         {
             Response.Redirect("userlogin.aspx");
         }
-
         protected void lkbtnSignUp_Click(object sender, EventArgs e)
         {
             Response.Redirect("userSignUp.aspx");
         }
-
         protected void lkbtnViewBooks_Click(object sender, EventArgs e)
         {
             Response.Redirect("bookInventoryList.aspx");
         }
-
         protected void lkbtnMemberManagement_Click1(object sender, EventArgs e)
         {
             Response.Redirect("memberManagement.aspx");
         }
-
         protected void lkbtnLogout_Click(object sender, EventArgs e)
         {
             Session["username"] = null;
@@ -112,12 +102,10 @@ namespace E_LibraryManagement
             Session["role"] = null;
             Response.Redirect("homepage.aspx");
         }
-
         protected void lkbtnHelloUser_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("userProfile.aspx");
         }
-
         protected void lkbtnHome_Click(object sender, EventArgs e)
         {
             Response.Redirect("homepage.aspx");
